@@ -1,14 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-export class Confirm extends Component
-{
-    render(){
-        return{
-            <div>
-
-            </div>
-        }
-    }
+export default class Confirm extends React.Component {
+  render() {
+    return <div></div>;
+  }
 }
-
-export default Confirm

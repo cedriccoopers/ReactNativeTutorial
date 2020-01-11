@@ -10,9 +10,10 @@ import Maps from "./components/Maps";
 import Geolocation from "./components/Geolocation";
 import AutoComplete from "./components/AutoComplete";
 //import AutoCompleteArray from "./components/AutoCompleteArray";
+import UserForm from "./components/FormWizard/UserForm";
 
 export default class App extends React.Component {
   render() {
-    return <AutoComplete />;
+    return <UserForm />;
   }
 }
