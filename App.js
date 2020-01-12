@@ -15,6 +15,6 @@ import AppBars from "./components/AppBars";
 
 export default class App extends React.Component {
   render() {
-    return <AppBars />;
+    return <UserForm />;
   }
 }
