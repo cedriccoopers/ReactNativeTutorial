@@ -26,17 +26,20 @@ export default class FormUserDetails extends React.Component {
           <Appbar.Action icon="dots-vertical" onPress={this._handleMore} />
         </Appbar.Header>
         <TextInput
+          mode="outlined"
           label="Enter your First Name"
           onChange={handleChange("firstName")}
           value={values.firstName}
         />
         <TextInput
+          mode="outlined"
           label="Enter your Surname"
           onChange={handleChange("surname")}
           value={values.surname}
         />
 
         <TextInput
+          mode="outlined"
           label="Enter your email"
           onChange={handleChange("email")}
           value={values.email}

@@ -31,17 +31,20 @@ export default class FormPersonalDetails extends React.Component {
           <Appbar.Action icon="dots-vertical" onPress={this._handleMore} />
         </Appbar.Header>
         <TextInput
+          mode="outlined"
           label="Enter Occupation"
           onChange={handleChange("occupation")}
           value={values.occupation}
         />
         <TextInput
+          mode="outlined"
           label="Enter your City"
           onChange={handleChange("city")}
           value={values.city}
         />
 
         <TextInput
+          mode="outlined"
           label="Enter your Bio"
           multiline="true"
           onChange={handleChange("bio")}
