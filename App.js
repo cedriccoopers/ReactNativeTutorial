@@ -23,13 +23,13 @@ export default class App extends React.Component {
   }
 
   render() {
-    /* if (this.state.isLoading) {
+    if (this.state.isLoading) {
       return (
         <View>
           <Text>Working</Text>
         </View>
       );
-    } */
+    }
 
     return <CountDown />;
   }
