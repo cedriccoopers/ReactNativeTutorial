@@ -12,9 +12,25 @@ import AutoComplete from "./components/AutoComplete";
 //import AutoCompleteArray from "./components/AutoCompleteArray";
 import UserForm from "./components/FormWizard/UserForm";
 import AppBars from "./components/AppBars";
+import Splash from "./components/Splash";
+import CountDown from "./components/Countdown";
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { isLoading: true };
+  }
+
   render() {
-    return <UserForm />;
+    /* if (this.state.isLoading) {
+      return (
+        <View>
+          <Text>Working</Text>
+        </View>
+      );
+    } */
+
+    return <CountDown />;
   }
 }
