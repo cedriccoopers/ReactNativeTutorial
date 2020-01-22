@@ -5,6 +5,7 @@ import Styles from "./components/Styles";
 import Layout from "./components/Layout";
 import Charts from "./components/Charts";
 import Inputs from "./components/Inputs";
+import Images from "./components/Images";
 import Http from "./components/Http";
 import Maps from "./components/Maps";
 import Geolocation from "./components/Geolocation";
@@ -19,18 +20,18 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { isLoading: true };
+    this.state = { isLoading: false };
   }
 
   render() {
-    if (this.state.isLoading) {
+    /* if (this.state.isLoading) {
       return (
         <View>
           <Text>Working</Text>
         </View>
       );
-    }
+    } */
 
-    return <CountDown />;
+    return <Splash />;
   }
 }
