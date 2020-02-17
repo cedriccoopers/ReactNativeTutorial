@@ -32,6 +32,6 @@ export default class App extends React.Component {
       );
     } */
 
-    return <UserForm />;
+    return <Inputs />;
   }
 }
