@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { MuiThemeProvider } from "@material-ui/core/styles";
 import { Appbar } from "react-native-paper";
 import { TextInput } from "react-native-paper";
 import { Button } from "react-native-paper";
@@ -20,29 +21,28 @@ export default class FormUserDetails extends React.Component {
     return (
       <React.Fragment>
         <Appbar.Header>
-          {/* <Appbar.BackAction onPress={this._goBack} /> */}
+          <Appbar.BackAction onPress={this.back} />
           <Appbar.Content title="Enter User Details" />
           <Appbar.Action icon="magnify" onPress={this._handleSearch} />
           <Appbar.Action icon="dots-vertical" onPress={this._handleMore} />
         </Appbar.Header>
         <TextInput
-          mode="outlined"
           label="Enter your First Name"
+          mode="outlined"
           onChange={handleChange("firstName")}
-          value={values.firstName}
+          defaultValue={values.firstName}
         />
         <TextInput
-          mode="outlined"
           label="Enter your Surname"
-          onChange={handleChange("surname")}
-          value={values.surname}
-        />
-
-        <TextInput
           mode="outlined"
+          onChange={handleChange("surname")}
+          defaultValue={values.surname}
+        />
+        <TextInput
           label="Enter your email"
+          mode="outlined"
           onChange={handleChange("email")}
-          value={values.email}
+          defaultValue={values.email}
         />
         <Button
           mode="contained"

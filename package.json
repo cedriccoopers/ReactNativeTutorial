@@ -8,7 +8,9 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.4",
     "expo": "^34.0.1",
+    "material-ui": "^0.20.2",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",
@@ -21,6 +23,7 @@
     "react-wizard-form": "^1.2.11"
   },
   "devDependencies": {
+    "@types/material-ui": "^0.21.7",
     "babel-preset-expo": "^6.0.0"
   },
   "private": true
