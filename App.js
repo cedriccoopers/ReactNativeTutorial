@@ -15,6 +15,7 @@ import UserForm from "./components/FormWizard/UserForm";
 import AppBars from "./components/AppBars";
 import Splash from "./components/Splash";
 import CountDown from "./components/Countdown";
+import CreditCard from "./components/CreditCard";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -32,6 +33,6 @@ export default class App extends React.Component {
       );
     } */
 
-    return <UserForm />;
+    return <CreditCard />;
   }
 }

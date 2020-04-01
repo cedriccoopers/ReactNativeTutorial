@@ -16,6 +16,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",
     "react-native-autocomplete-input": "^4.1.0",
     "react-native-countdown-component": "^2.6.0",
+    "react-native-credit-card-input": "^0.4.1",
     "react-native-maps": "~0.24.0",
     "react-native-paper": "^3.4.0",
     "react-native-splash-screen": "^3.2.0",
