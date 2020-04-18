@@ -16,6 +16,7 @@ import AppBars from "./components/AppBars";
 import Splash from "./components/Splash";
 import CountDown from "./components/Countdown";
 import CreditCard from "./components/CreditCard";
+import GetGlossary from "./components/API/GetGlossary";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -33,6 +34,6 @@ export default class App extends React.Component {
       );
     } */
 
-    return <CreditCard />;
+    return <GetGlossary />;
   }
 }
