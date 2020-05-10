@@ -34,6 +34,6 @@ export default class App extends React.Component {
       );
     } */
 
-    return <GetGlossary />;
+    return <CreditCard />;
   }
 }
