@@ -5,13 +5,13 @@ import { Button } from "react-native-paper";
 import { List, ListItem } from "react-native-paper";
 
 export default class Confirm extends React.Component {
-  continue = e => {
+  continue = (e) => {
     e.preventDefault();
     //PROCESS FORM
     this.props.nextStep();
   };
 
-  back = e => {
+  back = (e) => {
     e.preventDefault();
     this.props.prevStep();
   };
@@ -22,14 +22,14 @@ export default class Confirm extends React.Component {
 
   render() {
     const {
-      values: { firstName, surname, email, occupation, city, bio }
+      values: { firstName, surname, email, occupation, city, bio },
     } = this.props;
 
     return (
       <React.Fragment>
         <Appbar.Header>
           <Appbar.BackAction onPress={this._goBack} />
-          <Appbar.Content title="Confirm" />
+          <Appbar.Content title="Confirm Step 3 of 3" />
           <Appbar.Action icon="magnify" onPress={this._handleSearch} />
           <Appbar.Action icon="dots-vertical" onPress={this._handleMore} />
         </Appbar.Header>
@@ -59,7 +59,7 @@ export default class Confirm extends React.Component {
           left={firstName}
         ></List.Item>
         <List.Item
-          title={bio}
+          title="Bio"
           description="This is the Bio entered"
           left={firstName}
         ></List.Item>
@@ -86,6 +86,6 @@ export default class Confirm extends React.Component {
 
 const styles = {
   button: {
-    margin: 56
-  }
+    margin: 56,
+  },
 };

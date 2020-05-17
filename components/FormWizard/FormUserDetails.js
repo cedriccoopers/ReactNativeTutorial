@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import { Appbar } from "react-native-paper";
 import { TextInput } from "react-native-paper";
 import { Button } from "react-native-paper";
 
 export default class FormUserDetails extends React.Component {
-  continue = e => {
+  continue = (e) => {
     e.preventDefault();
     this.props.nextStep();
   };
@@ -21,8 +20,7 @@ export default class FormUserDetails extends React.Component {
     return (
       <React.Fragment>
         <Appbar.Header>
-          <Appbar.BackAction onPress={this.back} />
-          <Appbar.Content title="Enter User Details" />
+          <Appbar.Content title="User Details - Step 1 of 3" />
           <Appbar.Action icon="magnify" onPress={this._handleSearch} />
           <Appbar.Action icon="dots-vertical" onPress={this._handleMore} />
         </Appbar.Header>
@@ -30,7 +28,7 @@ export default class FormUserDetails extends React.Component {
           label="Enter your First Name"
           mode="outlined"
           onChange={handleChange("firstName")}
-          defaultValue={values.firstName}
+          value={values.firstName}
         />
         <TextInput
           label="Enter your Surname"
@@ -59,6 +57,6 @@ export default class FormUserDetails extends React.Component {
 
 const styles = {
   button: {
-    margin: 56
-  }
+    margin: 76,
+  },
 };

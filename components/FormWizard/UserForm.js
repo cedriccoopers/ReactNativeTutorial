@@ -12,14 +12,14 @@ export default class UserForm extends React.Component {
     email: "",
     occupation: "",
     city: "",
-    bio: ""
+    bio: "",
   };
 
   //Proceed to next step
   nextStep = () => {
     const { step } = this.state;
     this.setState({
-      step: step + 1
+      step: step + 1,
     });
   };
 
@@ -27,13 +27,14 @@ export default class UserForm extends React.Component {
   prevStep = () => {
     const { step } = this.state;
     this.setState({
-      step: step - 1
+      step: step - 1,
     });
   };
 
   //Handle field change
-  handleChange = input => e => {
-    this.setState({ [input]: e.target.value });
+  handleChange = (input) => (event) => {
+    this.setState({ [input]: event.target.value });
+    console.log(event.target);
   };
 
   render() {

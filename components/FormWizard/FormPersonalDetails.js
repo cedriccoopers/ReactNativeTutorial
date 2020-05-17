@@ -5,12 +5,12 @@ import { TextInput } from "react-native-paper";
 import { Button } from "react-native-paper";
 
 export default class FormPersonalDetails extends React.Component {
-  continue = e => {
+  continue = (e) => {
     e.preventDefault();
     this.props.nextStep();
   };
 
-  back = e => {
+  back = (e) => {
     e.preventDefault();
     this.props.prevStep();
   };
@@ -26,7 +26,7 @@ export default class FormPersonalDetails extends React.Component {
       <React.Fragment>
         <Appbar.Header>
           <Appbar.BackAction onPress={this.back} />
-          <Appbar.Content title="Enter Personal Details" />
+          <Appbar.Content title="Personal Details - Step 2 of 3" />
           <Appbar.Action icon="magnify" onPress={this._handleSearch} />
           <Appbar.Action icon="dots-vertical" onPress={this._handleMore} />
         </Appbar.Header>
@@ -73,6 +73,6 @@ export default class FormPersonalDetails extends React.Component {
 
 const styles = {
   button: {
-    margin: 80
-  }
+    margin: 80,
+  },
 };
